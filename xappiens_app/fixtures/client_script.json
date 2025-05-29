@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Budget",
+  "enabled": 1,
+  "modified": "2025-05-29 14:08:37.473895",
+  "module": "Xappiens App",
+  "name": "Filtro de Partidas",
+  "script": "frappe.ui.form.on('Budget', {\r\n\trefresh(frm) {\r\n\t\t// Aseguramos que sólo se muestren los headings cuyo campo \"budget\" coincide con este presupuesto\r\n\t\tfrm.fields_dict['custom_heading'].grid.get_field('heading').get_query = function(doc, cdt, cdn) {\r\n\t\t\treturn {\r\n\t\t\t\tfilters: [\r\n\t\t\t\t\t// Reemplaza \"Custom Heading\" por el nombre real del DocType al que apunta tu campo \"heading\"\r\n\t\t\t\t\t[ \"Budget Heading\", \"budget\", \"=\", frm.doc.name ]\r\n\t\t\t\t]\r\n\t\t\t};\r\n\t\t};\r\n\t}\r\n});\r\n",
+  "view": "Form"
+ }
+]

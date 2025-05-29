@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{budget}-{type}",
+ "creation": "2025-05-29 13:30:30.597298",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "column_break_lojk",
+  "budget",
+  "section_break_cgyp",
+  "amount",
+  "column_break_lryc",
+  "hours"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Budgent Heading Type",
+   "options": "Budget Heading Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "precision": "2"
+  },
+  {
+   "fieldname": "hours",
+   "fieldtype": "Float",
+   "label": "Hours",
+   "precision": "2"
+  },
+  {
+   "fieldname": "section_break_cgyp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_lryc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_lojk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Budget",
+   "options": "Budget",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-29 13:40:18.730549",
+ "modified_by": "Administrator",
+ "module": "Xappiens App",
+ "name": "Budget Heading",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

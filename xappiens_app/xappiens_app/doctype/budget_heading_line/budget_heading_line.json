@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-29 13:37:59.232620",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "heading",
+  "amount",
+  "hours"
+ ],
+ "fields": [
+  {
+   "fieldname": "heading",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Budget Heading",
+   "options": "Budget Heading"
+  },
+  {
+   "fetch_from": "heading.amount",
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount",
+   "precision": "2"
+  },
+  {
+   "fetch_from": "heading.hours",
+   "fieldname": "hours",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Hours",
+   "precision": "2"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-29 13:51:24.492962",
+ "modified_by": "Administrator",
+ "module": "Xappiens App",
+ "name": "Budget Heading Line",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

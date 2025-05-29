@@ -8,6 +8,9 @@ app_license = "mit"
 
 # Includes in <head>
 # ------------------
+override_doctype_class = {
+  "Budget": "xappiens_app.overrides.budget.Budget"
+}
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/xappiens_app/css/xappiens_app.css"
@@ -227,3 +230,8 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {"dt": "Custom Field", "filters": [["module", "=", "Xappiens App"]]},
+    {"dt": "Client Script", "filters": [["module", "=", "Xappiens App"]]},
+    {"dt": "Property Setter", "filters": [["module", "=", "Xappiens App"]]},
+]
